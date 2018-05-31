@@ -1,0 +1,70 @@
+.beijing{
+    /*头部背景*/
+    width: 100vw;/*宽*/
+    display: block;/*块级*/
+}
+.huodonggz{
+    /*活动规则*/
+    width: 1.38rem;/*宽*/
+    position: absolute;/*绝对定位*/
+    top: 0.26rem;/*上边距*/
+    left: 6.12rem;/*左边距*/
+}
+
+.tel{
+    /*请输入福建移动*/
+    width: 100vw;/*宽*/
+    height: .86rem;/*高*/
+    font-size: .28rem;/*字体大小*/
+    border: 1px solid #ffe5f3;/*描边*/
+    padding-left: .16rem;/*字体左边距*/
+    display: block;/*块级*/
+    margin-top: .32rem;/*上边距*/
+}
+/*修改提示文字的颜色*/
+input::-webkit-input-placeholder {
+    color: #f6d9e3;/*提示字体颜色*/
+}
+
+.one{
+    width: 1.68rem;/*宽*/
+    height: 1.1rem;/*高*/
+    color: white;/*字体颜色*/
+    font-size: 0.32rem;/*字体大小*/
+    border-radius: .08rem;/*圆角*/
+    background-color: #fb9ac7;/*背景颜色*/
+    box-shadow: inset 0 -4px 0 rgba(232 120 172 1);
+    /*box-shadow: 0 5px 5px #c9afbb;*/
+}
+
+
+.anxin1{
+    /*爱心*/
+    width: 0.27rem;
+    height: 0.23rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
