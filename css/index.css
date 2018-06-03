@@ -1,64 +1,321 @@
+
+/*首页 样式开始*/
 .beijing{
-    /*ͷ������*/
-    width: 100vw;/*��*/
-    display: block;/*�鼶*/
+    /*头部背景*/
+    width: 100vw;/*宽*/
+    display: block;/*块级*/
 }
 .huodonggz{
-    /*�����*/
-    width: 1.38rem;/*��*/
-    position: absolute;/*���Զ�λ*/
-    top: 0.26rem;/*�ϱ߾�*/
-    left: 6.12rem;/*��߾�*/
+    /*活动规则*/
+    width: 1.38rem;/*宽*/
+    position: absolute;/*绝对定位*/
+    top: 0.26rem;/*上边距*/
+    left: 6.12rem;/*左边距*/
 }
 
 .tel{
-    /*�����븣���ƶ�*/
-    width: 100vw;/*��*/
-    height: .86rem;/*��*/
-    font-size: .28rem;/*�����С*/
-    border: 1px solid #ffe5f3;/*���*/
-    padding-left: .16rem;/*������߾�*/
-    display: block;/*�鼶*/
-    margin-top: .32rem;/*�ϱ߾�*/
+    /*请输入福建移动*/
+    width: 100vw;/*宽*/
+    height: .86rem;/*高*/
+    font-size: .28rem;/*字体大小*/
+    border: 1px solid #ffe5f3;/*描边*/
+    padding-left: .16rem;/*字体左边距*/
+    display: block;/*块级*/
+    margin-top: .32rem;/*上边距*/
 }
-/*�޸���ʾ���ֵ���ɫ*/
+/*修改提示文字的颜色*/
 input::-webkit-input-placeholder {
-    color: #f6d9e3;/*��ʾ������ɫ*/
+    color: #f6d9e3;/*提示字体颜色*/
 }
 
 .btn{
-    margin: 0.46rem 0.20rem;/*��߾�*/
+    margin: 0.46rem 0.20rem;/*外边距*/
 }
 
-.btn1{
-    width: 1.68rem;/*��*/
-    height: 1.1rem;/*��*/
-    color: white;/*������ɫ*/
-    font-size: 0.32rem;/*�����С*/
-    border-radius: .08rem;/*Բ��*/
-    background-color: #fb9ac7;/*������ɫ*/
-    margin-right: .12rem;/*�ұ߾�*/
+.btn>button{
+    width: 1.68rem;/*宽*/
+    height: 1.1rem;/*高*/
+    color: #353535;/*字体颜色*/
+    font-size: 0.32rem;/*字体大小*/
+    border-radius: .08rem;/*圆角*/
+    border: 1px solid #ffe5f3;/*描边*/
+    background-color: white;/*背景色*/
+    margin-right: .12rem;/*右边距*/
 }
 
+.btn>.no{
+    /*显示出来*/
+    color: white;/*字体颜色*/
+    background-color: #fb9ac7;/*背景色*/
+    box-shadow: inset 0 -4px rgba(232,120,172,1);/*内阴影*/
+}
 .anxin1{
-    /*����*/
-    width: 0.27rem;/*��*/
-    height: 0.23rem;/*��*/
+    width: 0.27rem;/*爱心 宽度*/
+    margin-right: .04rem;/*右边距*/
+    display: none;/*隐藏*/
 }
 
-.btn2{
-    width: 1.68rem;/*��*/
-    height: 1.1rem;/*��*/
-    color: #353535;/*������ɫ*/
-    font-size: 0.32rem;/*�����С*/
-    border-radius: 0.08rem;/*Բ��*/
-    border: 1px solid #ffe5f3;/*���*/
-    background-color: white;/*����ɫ*/
-    margin-right: .12rem;/*�ұ߾�*/
+.btn>button.first.no>img.anxin1{
+    display: block;./*显示出来*/
+}
+.btn>button.wei.no>input.zdy{
+    display: block;/*显示出来*/
+}
+
+input.zdy{
+    width: 100%;/*宽*/
+    color: #353535;/*字体颜色*/
+    padding: 0.14rem;/*内边距*/
+    text-align: center;/*水平居中*/
+    display: none;/*输入框隐藏*/
+    background: transparent;/*透明背景*/
 }
 
 
+.zhifu1{
+    /*微信支付*/
+    width: 100vw;/*宽*/
+    height: .88rem;/*高*/
+    color: #353535;/*字体颜色*/
+    padding: 0 .2rem 0 .2rem;/*左右 内边距*/
+    font-size: .28rem;/*字体大小*/
+    background-color: white;/*背景颜色*/
+    border: 1px solid #ffe5f3;/*描边*/
+}
 
+.zhifu2{
+    /*银联支付*/
+    width: 100vw;/*宽*/
+    height: .88rem;/*高*/
+    color: #353535;/*字体颜色*/
+    padding: 0 .2rem 0 .2rem;/*左右 内边距*/
+    font-size: .28rem;/*字体大小*/
+    background-color: white;/*背景颜色*/
+    border-bottom: 1px solid #ffe5f3;/*下描边*/
+}
+
+.zhifu1>i,.zhifu2>i{
+    width: .33rem;/*宽*/
+    height: .33rem;/*高*/
+    border-radius: 50%;/*圆角*/
+    border: 1px solid #ffe5f3;/*描边*/
+}
+
+.inp:checked+i{
+    width: .35rem;/*宽*/
+    height: .3rem;/*高*/
+    border-radius: 0;/*圆角*/
+    border: 1px solid white;/*描边*/
+    background:url("../image/zhifu_aixin.png") no-repeat;/*爱心*/
+    background-size: 100% 100%;/*爱心大小*/
+}
+
+#danxuan,#danxuan2{
+    display: none;/*单选框隐藏*/
+}
+
+.weixin{
+    /*微信*/
+    width: 0.51rem;/*宽*/
+    margin-right: .22rem;/*右边距*/
+}
+.yinlian{
+    /*银联*/
+    width: 0.57rem;/*宽*/
+    margin-right: .22rem;/*右边距*/
+}
+
+#danxuan{
+    /*单选框*/
+    width: .33rem;/*宽*/
+    height: .33rem;/*高*/
+    border-radius: 50%;/*圆角*/
+    border: 1px solid #ffe5f3;/*描边*/
+}
+
+#danxuan2{
+    /*单选框*/
+    width: .33rem;/*宽*/
+    height: .33rem;/*高*/
+    border-radius: 50%;/*圆角*/
+    border: 1px solid #ffe5f3;/*描边*/
+}
+
+.liji{
+    /*立即支付*/
+    width: 7.1rem;/*宽*/
+    height: .88rem;/*高*/
+    color: white;/*字体颜色*/
+    font-size: .30rem;/*字体大小*/
+    border-radius: .08rem;/*圆角*/
+    margin: .52rem .20rem;/*外边距*/
+    background-color: #fb9ac7;/*背景颜色*/
+    box-shadow: inset 0 -6px rgba(232,120,172,1);/*阴影*/
+}
+/*首页 样式结束*/
+
+
+
+/*活动规则 样式开始*/
+
+.dic{
+    width: 6.5rem;/*宽*/
+    height: 8.54rem;/*高*/
+    border-radius: 0.5rem;/*圆角*/
+    background-color: white;/*背景颜色*/
+    position: fixed;/*浮动定位*/
+    top: 1rem;/*上*/
+    left: .5rem;/*左*/
+    display: none;
+}
+
+.title{
+    /*活动规则 头部*/
+    height: 1.4rem;/*高*/
+    margin: 0 .46rem 0 .5rem;/*外边距*/
+}
+
+.title-text{
+    padding-top: .47rem;/*上 内边距*/
+}
+
+
+.title-text span {
+    display: block;/*设置为块级元素会独占一行形成上下居中的效果*/
+    position: relative;/*定位横线（当横线的父元素）*/
+    color: #f7699e;/*居中文字的颜色*/
+    text-align: center;/*水平居中*/
+    font-size: .32rem;/*字体大小*/
+}
+.title-text span:before, .title-text span:after {
+    content: '';
+    position: absolute;/*定位背景横线的位置*/
+    top: 50%;
+    background:rgba(237,96,149,0.53);/*背景横线颜色*/
+    width: 35%; /*单侧横线的长度*/
+    height: 1px;/*高*/
+}
+
+.title-text span:before {
+    left: 1%; /*背景横线的左右距离*/
+}
+.title-text span:after {
+    right: 1%;/*背景横线的左右距离*/
+}
+
+.title_ziti li{
+    font-size: .26rem;/*字体大小*/
+    color: #f7699e;/*字体颜色*/
+    width: 5.6rem;/*宽度*/
+    padding-top: .2rem;/*上边距*/
+}
+
+.yes{
+    /*知道了*/
+    width: 5.56rem;/*宽*/
+    height: .88rem;/*高*/
+    color: white;/*字体颜色*/
+    font-size: .30rem;/*字体大小*/
+    background-color: #fb9ac7;/*背景色*/
+    border-radius: .10rem;/*圆角*/
+    box-shadow: inset 0 -6px rgb(232, 120, 172);
+    margin-left: .47rem;/*左边距*/
+}
+/*活动规则 样式结束*/
+
+
+
+/*请输入您的手机号码 样式开始*/
+.tel_dic{
+    /*底层*/
+    width: 6.72rem;/*宽*/
+    height: 3.82rem;/*高*/
+    border-radius: .2rem;/*圆角*/
+    background-color: white;/*背景色*/
+    position: fixed;/*浮动定位*/
+    top: 3.32rem;/*上*/
+    left: .40rem;/*左*/
+}
+
+.tel2{
+    /*输入框*/
+    width: 5.38rem;/*宽*/
+    height: .88rem;/*高*/
+    border-radius: .1rem;/*圆角*/
+    font-size: .28rem;/*字体大小*/
+    padding-left: .26rem;/*左 内边距*/
+    border: 1px solid #ffe5f3;/*描边*/
+}
+
+.tongzhi{
+    /*短信形式通知*/
+    font-size: .28rem;/*字体大小*/
+    color: #f7699e;/*字体颜色*/
+    width: 5.38rem;/*宽*/
+    margin: .18rem 0 .34rem 0;/*外边距*/
+}
+
+.shuru{
+    /*输入框 短信形式通知*/
+    margin-left: .67rem;/*左边距*/
+}
+
+.qux{
+    /*取消*/
+    width: 3.36rem;/*宽*/
+    height: 1.2rem;/*高*/
+    color: white;/*字体颜色*/
+    font-size: .3rem;/*字体大小*/
+    background-color: #cbcbcb;/*背景色*/
+    border-radius: 0 0 0 10px;/*圆角*/
+}
+
+.qur{
+    /*确认*/
+    width: 3.36rem;/*宽*/
+    height: 1.2rem;/*高*/
+    color: white;/*字体颜色*/
+    font-size: .3rem;/*字体大小*/
+    background-color: #fb9ac7;/*背景色*/
+    border-radius: 0 0 10px 0;/*圆角*/
+}
+/*请输入您的手机号码 样式结束*/
+
+
+
+/*号码与充值一致 样式开始*/
+.yizhi{
+    /*号码一致*/
+    height: 2.62rem;/*高*/
+}
+
+.tongzhi2{
+    /*短信形式通知*/
+    font-size: .28rem;/*字体大小*/
+    color: #f7699e;/*字体颜色*/
+    width: 5.38rem;/*宽*/
+}
+.qux2{
+    /*取消*/
+    width: 3.36rem;/*宽*/
+    height: 1.2rem;/*高*/
+    color: white;/*字体颜色*/
+    font-size: .3rem;/*字体大小*/
+    background-color: #cbcbcb;/*背景色*/
+    border-radius: 0 0 0 10px;/*圆角*/
+}
+
+.qur2{
+    /*确认*/
+    width: 3.36rem;/*宽*/
+    height: 1.2rem;/*高*/
+    color: white;/*字体颜色*/
+    font-size: .3rem;/*字体大小*/
+    background-color: #fb9ac7;/*背景色*/
+    border-radius: 0 0 10px 0;/*圆角*/
+}
+
+/*号码与充值一致 样式结束*/
 
 
 
