@@ -55,7 +55,7 @@ input::-webkit-input-placeholder {
     display: none;/*隐藏*/
 }
 
-.btn>button.first.no>img.anxin1{
+.btn>button.no>img.anxin1{
     display: block;./*显示出来*/
 }
 .btn>button.wei.no>input.zdy{
@@ -70,6 +70,7 @@ input.zdy{
     display: none;/*输入框隐藏*/
     background: transparent;/*透明背景*/
 }
+
 
 
 .zhifu1{
@@ -179,7 +180,6 @@ input.zdy{
     padding-top: .47rem;/*上 内边距*/
 }
 
-
 .title-text span {
     display: block;/*设置为块级元素会独占一行形成上下居中的效果*/
     position: relative;/*定位横线（当横线的父元素）*/
@@ -235,6 +235,7 @@ input.zdy{
     position: fixed;/*浮动定位*/
     top: 3.32rem;/*上*/
     left: .40rem;/*左*/
+    /*display: none;/!*隐藏*!/*/
 }
 
 .tel2{
@@ -319,10 +320,123 @@ input.zdy{
 
 
 
+/*充值成功 样式开始*/
+.title_cg{
+    /*充值成功头部背景*/
+    width: 100%;/*宽*/
+    position: fixed;/*浮动定位*/
+    top: 0px;/*上边距*/
+}
+
+.wtongzhi{
+    /*扣款成功后，*/
+    width: 7.07rem;/*宽*/
+    height: 1.76rem;/*高*/
+    top: 5.22rem;/*上*/
+    left: .23rem;/*左*/
+    color: #d16284;/*字体颜色*/
+    font-size: .28rem;/*字体大小*/
+    position: fixed;/*浮动定位*/
+    line-height: .40rem;/*字体间距*/
+    border-radius: .10rem;/*圆角*/
+    background-color: #fbdce6;/*背景色*/
+    padding: .25rem .34rem .28rem .25rem;/*内边距*/
+}
+
+.zhuanfa{
+    /*转发给TA，底层*/
+    width: 7.1rem;/*宽*/
+    height: .88rem;/*高*/
+    border-radius: .2rem;/*圆角*/
+    background-color: white;/*背景色*/
+    border: 1px dashed #ec78aa;/*虚线*/
+    position: fixed;/*浮动定位*/
+    top: 7.63rem;/*上*/
+    left: .2rem;/*左*/
+}
+
+.love{
+    /*转发给TA，让TA知道，爱就是1314*/
+    width: 4.82rem;/*宽*/
+}
+
+.zhixu{
+    /*以上内容如有不解之处，请咨询各移动营业厅*/
+    color: #d16284;/*字体颜色*/
+    font-size: .26rem;/*字体大小*/
+    position: fixed;/*浮动定位*/
+    top: 9.08rem;/*上边距*/
+    left: 1.17rem;/*左边距*/
+}
+/*充值成功 样式结束*/
 
 
 
+/*为爱充值 样式开始*/
+.for_love{
+    /*06头部背景*/
+    width: 100%/*宽*/;
+    position: fixed;/*浮动定位*/
+    top: 0px;/*上*/
+    left: 0px;/*左*/
+}
 
+.ma_beij{
+    /*识别关注，为爱充值*/
+    width: 100%;/*宽*/
+    position: fixed;/*浮动定位*/
+    top: 4.92rem;/*上边距*/
+}
+
+.erweima{
+    /*二维码*/
+    width: 3.34rem;/*宽*/
+    position: fixed;/*浮动定位*/
+    top: 6.11rem;/*上边距*/
+    left: 2.09rem;/*左边距*/
+}
+
+.title2{
+    /*活动规则、活动时间*/
+    position: fixed;/*浮动定位*/
+    top: 10.28rem;/*上距离*/
+    left: .2rem;/*左距离*/
+}
+
+.title2 li{
+    /*活动时间*/
+    width: 7.1rem;/*宽*/
+    color: #f7699e;/*字体颜色*/
+    font-size: .26rem;/*字体大小*/
+    line-height: .4rem;/*字间距*/
+    padding-left: .2rem;/*左边距*/
+    list-style: none;/*取消有序列表*/
+}
+
+.title-text2 span {
+    display: block;/*设置为块级元素会独占一行形成上下居中的效果*/
+    position: relative;/*定位横线（当横线的父元素）*/
+    color: #f7699e;/*居中文字的颜色*/
+    text-align: center;/*水平居中*/
+    font-size: .32rem;/*字体大小*/
+    margin-bottom: .4rem;/*下边距*/
+}
+.title-text2 span:before, .title-text2 span:after {
+    content: '';
+    position: absolute;/*定位背景横线的位置*/
+    top: 50%;
+    background:rgba(237,96,149,0.53);/*背景横线颜色*/
+    width: 35%; /*单侧横线的长度*/
+    height: 1px;/*高*/
+}
+
+.title-text2 span:before {
+    left: 1%; /*背景横线的左右距离*/
+}
+.title-text2 span:after {
+    right: 1%;/*背景横线的左右距离*/
+}
+/*为爱充值 样式结束*/
 
 
 

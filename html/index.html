@@ -25,111 +25,113 @@
     <link rel="stylesheet" href="../css/index.css"/>
 
     <!--jvavScript-->
-    <script src="../js/swiper.min.js"></script>
+    <script src="../js/index.js"></script>
+
 </head>
 <body>
 
-<!--首页开始-->
-<img src="../image/shouye_toubu.jpg" class="beijing"/>
-<!--头部背景-->
+<section id="home">
+    <!--首页开始-->
+    <img src="../image/shouye_toubu.jpg" class="beijing"/>
+    <!--头部背景-->
 
-<img src="../image/huodongguizhe.png" class="huodonggz"/>
-<!--活动规则-->
+    <img src="../image/huodongguizhe.png" class="huodonggz"/>
+    <!--活动规则-->
 
-<input type="tel" placeholder="请输入福建移动" maxlength="11" class="tel"/>
-<!--请输入福建移动-->
+    <input type="tel" placeholder="请输入福建移动号码" maxlength="11" class="tel" id="ChongTel"/>
+    <!--请输入福建移动-->
 
-<section class="btn" flex="main:justify">
-    <button flex="cross:center main:center" class="first no">
-        <img src="../image/1314_aixin.png" class="anxin1"/>
-        13.14元
-    </button>
+    <section class="btn" flex="main:justify">
+        <button flex="cross:center main:center" class="first no" id="shisanshisi">
+            <img src="../image/1314_aixin.png" class="anxin1"/>
+            13.14元
+        </button>
 
-    <button flex="cross:center main:center">
-        50元
-    </button>
+        <button flex="cross:center main:center" id="wushi">
+            50元
+        </button>
 
-    <button flex="cross:center main:center">
-        100元
-    </button>
+        <button flex="cross:center main:center" id="yibai">
+            100元
+        </button>
 
-    <button flex="cross:center main:center" class="wei">
-        <span>自定义</span>
-        <input type="tel" class="zdy"/>
-    </button>
+        <button flex="cross:center main:center" class="wei" id="zdy">
+            <span id="zdyspan">自定义</span>
+            <input type="tel" class="zdy" id="zdyinput" />
+        </button>
+    </section>
+
+
+    <section>
+        <label for="danxuan"  flex="main:justify cross:center" class="zhifu1">
+            <div>
+                <img src="../image/weixin.png" alt="微信" class="weixin"/>
+                <span>微信支付</span>
+            </div>
+            <input type="radio" name="a" id="danxuan" class="inp"/>
+            <i></i>
+        </label>
+
+        <label for="danxuan2" flex="main:justify cross:center" class="zhifu2">
+            <div>
+                <img src="../image/yinlian.png" alt="银联支付" class="yinlian"/>
+                <span>银联支付</span>
+            </div>
+            <input type="radio" name="a" id="danxuan2" checked="checked" class="inp"/>
+            <i></i>
+        </label>
+
+        <button class="liji" id="sumbTel">立即支付</button>
+    </section>
 </section>
-
-
-<section>
-    <label for="danxuan"  flex="main:justify cross:center" class="zhifu1">
-        <div>
-            <img src="../image/weixin.png" alt="微信" class="weixin"/>
-            <span>微信支付</span>
-        </div>
-        <input type="radio" name="a" id="danxuan" class="inp"/>
-        <i></i>
-    </label>
-    
-    <label for="danxuan2" flex="main:justify cross:center" class="zhifu2">
-        <div>
-            <img src="../image/yinlian.png" alt="银联支付" class="yinlian"/>
-            <span>银联支付</span>
-        </div>
-        <input type="radio" name="a" id="danxuan2" checked="checked" class="inp"/>
-        <i></i>
-    </label>
-</section>
-
-<button class="liji">立即支付</button>
-
 <!--首页结束-->
 
 
 <!--活动规则 开始-->
-<!--<section >-->
-    <!--<div class="dic">-->
-        <!--<div class="title">-->
-            <!--<h6 class="title-text"><span>活动规则</span></h6>-->
-        <!--</div>-->
+<section >
+    <div class="dic">
+        <div class="title">
+            <h6 class="title-text"><span>活动规则</span></h6>
+        </div>
 
-        <!--<ol class="title_ziti" flex="dir:top cross:center main:center">-->
-            <!--<li>1、活动时间：2月14日&#45;&#45;2月16日</li>-->
-            <!--<li>2、活动期间用户为自己的好友/亲人/爱人充值13.14元，即可获得1G流量日包奖励；</li>-->
-            <!--<li>3、活动期间内用户最多可获赠3次1G流量日包，流量生效期间不可重复受理；</li>-->
-            <!--<li>4、1G流量日包生效后有效期为24小时，内含流量在24小时内使用有效。超过期限（或使用完内含流量），套餐及内含流量同时失效；</li>-->
-            <!--<li>5、旧版wap套餐取消后方可参与本活动。若客户为预销户状态、或随E行等状态异常客户，也无法参与本活动。</li>-->
-        <!--</ol>-->
+        <ol class="title_ziti" flex="dir:top cross:center main:center">
+            <li>1、活动时间：2月14日--2月16日</li>
+            <li>2、活动期间用户为自己的好友/亲人/爱人充值13.14元，即可获得1G流量日包奖励；</li>
+            <li>3、活动期间内用户最多可获赠3次1G流量日包，流量生效期间不可重复受理；</li>
+            <li>4、1G流量日包生效后有效期为24小时，内含流量在24小时内使用有效。超过期限（或使用完内含流量），套餐及内含流量同时失效；</li>
+            <li>5、旧版wap套餐取消后方可参与本活动。若客户为预销户状态、或随E行等状态异常客户，也无法参与本活动。</li>
+        </ol>
 
-        <!--<button class="yes">知道了</button>-->
-    <!--</div>-->
-<!--</section>-->
+        <button class="yes">知道了</button>
+    </div>
+</section>
 <!--活动规则 结束-->
 
 
 <!--请输入您的手机号码 开始-->
-<!--<section>-->
+<section id="tanTel">
 
-    <!--<div class="tel_dic">-->
-        <!--<div class="shuru">-->
-            <!--<input type="tel" placeholder="请输入您的手机号码" maxlength="11" class="tel2"/>-->
-            <!--<span class="tongzhi" flex="main:center">-->
-                <!--获赠流量将通过该号码领取，受理结果将在完-->
-                <!--成扣款后，以短信形式通知。-->
-            <!--</span>-->
-        <!--</div>-->
+    <div class="tel_dic">
+        <div class="shuru">
+            <input type="tel" placeholder="请输入您的手机号码" maxlength="11" class="tel2" id="tel2"/>
+            <span class="tongzhi" flex="main:center">
+                获赠流量将通过该号码领取，受理结果将在完
+                成扣款后，以短信形式通知。
+            </span>
+        </div>
 
-        <!--<div flex="main:jusify cross:center">-->
-            <!--<button class="qux">取消</button>-->
-            <!--<button class="qur">确认</button>-->
-        <!--</div>-->
-    <!--</div>-->
+        <div flex="main:jusify cross:center">
+            <button class="qux">取消</button>
+            <button class="qur">确认</button>
+        </div>
+    </div>
 
-<!--</section>-->
+</section>
 <!--请输入您的手机号码 结束-->
 
 
 <!--号码与充值一致 开始-->
-<section>
+<section id="yizhi">
 
     <div class="tel_dic">
         <div class="yizhi" flex="main:center cross:center">
@@ -147,6 +149,72 @@
 
 </section>
 <!--号码与充值一致 结束-->
+
+
+
+
+<!--充值成功开始-->
+<section id="chenggong">
+    <img src="../image/05_toubu.jpg" alt="充值成功" class="title_cg"/>
+    <!--充值成功头部背景-->
+    <div class="wtongzhi">
+        <span>扣款成功后，充值金额将于10分钟左右到账。遇系统
+            繁忙等情况可能会延迟到账。如您符合流量赠送要求,
+            则流量的受理结果将以短信形式通知。</span>
+    </div>
+
+    <div class="zhuanfa" flex="main:center cross:center">
+        <img src="../image/zhungfaziti.png" alt="转发给TA，让TA知道，爱就是1314" class="love"/>
+    </div>
+
+    <span class="zhixu">以上内容如有不解之处，请咨询各移动营业厅</span>
+</section>
+<!--充值成功结束-->
+
+
+
+<!--为爱充值 开始-->
+<section id="weiai">
+    <img src="../image/shouye_toubu.jpg" alt="为爱充值" class="for_love"/>
+
+    <div>
+        <img src="../image/06_weiai.jpg" alt="识别关注，为爱充值" class="ma_beij"/>
+        <img src="../image/06_erweima.png" alt="二维码" class="erweima"/>
+    </div>
+
+    <div class="title2">
+         <h6 class="title-text2"><span>活动规则</span></h6>
+        <ol>
+            <li>1、活动时间：2月14日--2月16日</li>
+            <li>2、活动期间用户为自己的好友/亲人/爱人充值13.14元，即可
+                获得1G流量日包奖励；</li>
+        </ol>
+    </div>
+</section>
+<!--为爱充值 结束-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
