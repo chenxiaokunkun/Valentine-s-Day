@@ -36,7 +36,7 @@ input::-webkit-input-placeholder {
     width: 1.68rem;/*宽*/
     height: 1.1rem;/*高*/
     color: #353535;/*字体颜色*/
-    font-size: 0.32rem;/*字体大小*/
+    font-size: 0.30rem;/*字体大小*/
     border-radius: .08rem;/*圆角*/
     border: 1px solid #ffe5f3;/*描边*/
     background-color: white;/*背景色*/
